@@ -9,18 +9,22 @@ angular
           templateUrl : 'partials/home.html'
         , controller  : 'HomeCtrl'
       })
+
       .when('/add-video', {
           templateUrl : 'partials/video-form.html'
         , controller  : 'AddVideoCtrl'
       })
+
       .when('/video/:id', {
           templateUrl: 'partials/video-form.html'
         , controller: 'EditVideoCtrl'
       })
+
       .when('/video/delete/:id', {
         templateUrl: 'partials/video-delete.html',
         controller: 'DeleteVideoCtrl'
       })
+
       .otherwise({
         redirectTo  : '/'
       });
