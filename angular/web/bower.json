@@ -1,0 +1,21 @@
+{
+  "name": "web",
+  "homepage": "https://github.com/iPotaje/pills",
+  "authors": [
+    "Emilio G. Correa <ipotaje@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "bootstrap": "^3.3.6"
+  }
+}
