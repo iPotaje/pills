@@ -1,0 +1,11 @@
+extends layout
+block content
+  ul
+  each item in posts
+      li Item #{item.name} - #{item.desc} -
+          a(href='/post/details/#{item.id}') Details - &nbsp;
+          a(href='/post/edit/#{item.id}') Edit -
+          a(href='/post/delete/#{item.id}') Delete
+  div
+      p
+          a(href='post/create') Add new

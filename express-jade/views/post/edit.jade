@@ -1,0 +1,5 @@
+extends layout
+block content
+  form(id='form', action='/post/update', method='POST')
+      input(id='id', name='id', type='hidden', value='#{post.id}')
+      include form
