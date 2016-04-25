@@ -1,0 +1,12 @@
+extends ../layout.jade
+block content
+  h1= article.title
+  small
+    include by_line
+  p= article.body
+
+  a(href="/articles/") List
+  |  |&nbsp;
+  a(href="/articles/#{article.id}/edit") Edit Article
+  |  |&nbsp;
+  a(href="/articles/#{article.id}/delete") Delete Article

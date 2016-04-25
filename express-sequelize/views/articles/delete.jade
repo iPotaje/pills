@@ -1,0 +1,8 @@
+extends ../layout.jade
+
+block content
+  h1= title
+  p Are you sure you want to delete #{article.title}?
+  a(href="/articles/#{article.id}") No! Take me back!
+  form(id='form', action='/articles/#{article.id}?_method=DELETE', method='POST')
+    button(type="submit") Yes, I am!

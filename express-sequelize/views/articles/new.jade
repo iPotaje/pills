@@ -1,0 +1,13 @@
+extends ../layout.jade
+
+block content
+  h1= title
+
+  if errors
+    h2(style="color:red") Oooops an error occured!
+    ul(style="color:red")
+      each error in errors
+        li #{error.message}
+
+  form(id='form', action='/articles', method='POST')
+    include form
